@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack --mode development"
+    "test": "webpack --mode development",
+    "sass": "sass assets/styles/index.scss assets/styles/index.css --watch"
   },
   "author": "",
   "license": "ISC",

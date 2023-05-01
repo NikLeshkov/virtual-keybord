@@ -8,6 +8,4 @@ export default function createMain() {
 
   document.body.append(main);
   main.append(inputArea);
-
-
 }

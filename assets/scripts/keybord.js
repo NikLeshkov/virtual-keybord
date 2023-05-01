@@ -23,32 +23,28 @@ export default function createKeyboard() {
     }
   }
 
-  document.addEventListener('keypress', function (e) {
-    for (let i = 0; i < keys.length; i += 1)
-        for (let j = 0;  j < keys[i].length; j += 1){
-            if (e.key == keys[i][j]){
-                let key = keys[i][j];
-                
-                let textArea = document.querySelector('textarea');
+  document.addEventListener('keypress', (e) => {
+    for (let i = 0; i < keys.length; i += 1) {
+      for (let j = 0; j < keys[i].length; j += 1) {
+        if (e.key === keys[i][j]) {
+          let key = keys[i][j];
 
-                textArea.innerHTML += e.key;
-
-                key = document.querySelector('.' + keys[i][j]);
-                key.classList.add("color");
-            } 
+          key = document.querySelector(`.${keys[i][j]}`);
+          key.classList.add('color');
         }
-    
+      }
+    }
   });
 
-  document.addEventListener('keyup', function (e) {
-    for (let i = 0; i < keys.length; i += 1)
-        for (let j = 0;  j < keys[i].length; j += 1){
-            if (e.key == keys[i][j]){
-                let key = keys[i][j];
-                key = document.querySelector('.' + keys[i][j]);
-                key.classList.remove("color");
-            } 
+  document.addEventListener('keyup', (e) => {
+    for (let i = 0; i < keys.length; i += 1) {
+      for (let j = 0; j < keys[i].length; j += 1) {
+        if (e.key === keys[i][j]) {
+          let key = keys[i][j];
+          key = document.querySelector(`.${keys[i][j]}`);
+          key.classList.remove('color');
         }
-    
+      }
+    }
   });
 }

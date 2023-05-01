@@ -1,14 +1,13 @@
-export function create_main(){
-    let main = document.createElement("main");
-    main.className = "main"
+export default function createMain() {
+  const main = document.createElement('main');
+  main.className = 'main';
 
-    let text_area = document.createElement("textarea");
-    text_area.className = "input_field";
-    text_area.setAttribute("rows","20")
+  const inputArea = document.createElement('textarea');
+  inputArea.className = 'input_field';
+  inputArea.setAttribute('rows', '20');
 
-    document.body.append(main);
-    main.append(text_area);
+  document.body.append(main);
+  main.append(inputArea);
 
-  
-  
+
 }

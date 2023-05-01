@@ -1,7 +1,7 @@
-import {create_header} from "./header";
-import { create_main } from "./main";
-import { createKeyboard } from "./keybord";
+import createHeader from './header';
+import createMain from './main';
+import createKeyboard from './keybord';
 
-create_header();
-create_main();
+createHeader();
+createMain();
 createKeyboard();

@@ -32,6 +32,7 @@
   color: white;
   border: solid 1px white;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .keyboard {
@@ -79,4 +80,7 @@
   width: 370px;
 }
 
+.color{
+  background-color: green;
+}
 /*# sourceMappingURL=index.css.map */
